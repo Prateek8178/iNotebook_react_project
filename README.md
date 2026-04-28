@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# 📝 iNotebook – MERN Stack Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+iNotebook is a full-stack note-taking web application built using the MERN stack. It allows users to securely create, update, and delete notes with authentication.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 🔐 User Authentication (Signup/Login using JWT)
+* 📝 Add, Edit, Delete Notes (CRUD Operations)
+* ☁️ Notes stored securely in MongoDB
+* ⚡ Fast and responsive UI
+* 🔄 Dynamic updates without page reload
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React.js
+* React Router
+* Bootstrap
 
-### `npm run build`
+### Backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```
+iNotebook_react_project/
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── index.js
+│
+├── src/
+├── public/
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ Run Project Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+git clone https://github.com/Prateek8178/iNotebook_react_project.git
+cd iNotebook_react_project
+```
 
-## Learn More
+### 2. Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Run frontend + backend together
 
-### Code Splitting
+```
+npm run both
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📍 Runs on:
 
-### Analyzing the Bundle Size
+* Frontend → http://localhost:3000
+* Backend → http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create a `.env` file inside the backend folder:
 
-### Advanced Configuration
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📦 API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Auth Routes:
 
-### `npm run build` fails to minify
+* POST `/api/auth/createuser`
+* POST `/api/auth/login`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Notes Routes:
+
+* GET `/api/notes/fetchallnotes`
+* POST `/api/notes/addnote`
+* PUT `/api/notes/updatenote/:id`
+* DELETE `/api/notes/deletenote/:id`
+
+---
+
+## 💡 Key Highlights
+
+* Implemented secure authentication using JWT
+* Built RESTful APIs using Express.js
+* Integrated MongoDB for persistent storage
+* Used React for dynamic UI and state management
+* Used concurrently to run frontend and backend together
+
+---
+
+## 🧠 What I Learned
+
+* Full-stack development using MERN stack
+* API creation and integration
+* Authentication and middleware
+* State management in React
+
+---
+
+## 👨‍💻 Author
+
+**Prateek Sahu**
+GitHub: https://github.com/Prateek8178
+
+---
+
+## ⭐ Note
+
+This project is currently running locally. Deployment will be added soon.
+
+---
